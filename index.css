@@ -1,0 +1,244 @@
+/*Aqui importo las fuentes especiales que usare en la web*/
+@font-face {
+    font-family: dragonFont;
+    src: url(fonts/Saiyan-Sans.ttf);
+}
+@font-face{
+    font-family: dragonFontRight; 
+    src: url(fonts/Saiyan-Sans\ Right\ Oblique.ttf);
+}
+/*Oculta la barra de scroll vertical*/
+::-webkit-scrollbar {
+    display: none;
+}
+#web_body{
+    min-width: 1440px;
+}
+
+/*Desde aqui doy estilos al header de la web*/
+header, h1{
+    font-family: dragonFontRight;
+}
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #070051;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 5000;
+}
+header img{
+    width: 20%;
+}
+header, h1{
+    color: #E6C70F;
+}
+
+/*Desde aqui doy estilos al navbar de la web*/
+.button_a{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.nav_button{
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #EE7022;
+    color: #E6C70F;
+    margin: 22px;
+}
+.nav_button:hover{
+    cursor: pointer;
+}
+
+/*Desde aqui doy estilos a la seccion 1 de la web*/
+#section_1{
+    position: relative;
+}
+.sect1_bg{
+    width: 100%;
+}
+.sect1_text_container{
+    width: 40%;
+    height: 40%;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 30px;
+    position: absolute;
+    bottom: 35%;
+    left: 5%;
+    transition: 0.5s;
+}
+.sect1_text_container:hover{
+    background-color: rgba(0, 36, 164, 0.392);
+    transition: 0.5s;
+    cursor: cell;
+}
+.sect1_text_container h2{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5%;
+}
+.sect1_text_container p{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5%;
+}
+
+/*Desde aqui doy estilos a la seccion 2 de la web*/
+#section_2{
+    position: relative;
+    margin-top: -22px;
+}
+.sect2_bg{
+    width: 100%;
+}
+.sect2_subtitle{
+    display: inline-block;
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-left: 5%;
+}
+.sect2_cards{
+    display: grid;
+    padding: 1%;
+    column-gap: 1%;
+    grid-template-columns: repeat(4, 1fr);
+    height: 45%;
+    width: 90%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    border-radius: 20px;
+}
+.card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card_text_container{
+    position: absolute;
+    top: 40%;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+}
+.card_title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+.card_subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+.card_text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    
+    color: #ffffff;
+}
+.card_img{
+    width: 50%;
+}
+.jiren_img{
+    width: 70%;
+}
+.hit_img{
+    width: 45%;
+}
+.androide18_img{
+    width: 25%;
+}
+
+.sect2_container{
+    position: absolute;
+    top: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.sect2_title{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+.sect2_paragraph{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.sacerdote{
+    width: 80%;
+}
+.sect2_text_container{
+    margin-left: 5%;
+}
+
+/*Desde aqui doy estilos a la seccion 3 de la web*/
+#section_3{
+    position: relative;
+    margin-top: 0;
+}
+.sect3_bg{
+    width: 100%;
+}
+.sect3_title {
+    color: #ffffff;
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    display: inline-block;
+    
+}
+.universos_container{
+    top: 8%;
+    left: 5%;
+    display: grid;
+    padding: 1%;
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    background-color: rgba(0,0,0,.5);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2%;
+    gap: 4%;
+}
+.universo_item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.universo_img{
+    width: 35%;
+}
+.universo_text_container{
+    position: absolute;
+    left: 40%;
+    width: 60%;
+}
+.universo_title{
+    font-size: 20px;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+}
+.universo_text{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
